@@ -1,8 +1,5 @@
-Here’s a complete **README.md** file for your project. You can copy and paste it directly into your GitHub repository.  
 
----
 
-```markdown
 # 📊 Personal Dashboard
 
 A customizable personal dashboard built with **React** and **Firebase**, featuring widgets like a to-do list, system stats, and weather updates.
