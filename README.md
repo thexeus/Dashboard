@@ -4,7 +4,7 @@
 
 A customizable personal dashboard built with **React** and **Firebase**, featuring widgets like a to-do list, system stats, and weather updates.
 
-![Dashboard Preview](https://your-image-url.com) <!-- Replace with an actual image URL -->
+
 
 ## ✨ Features
 - 🕒 **Real-time Clock** – Displays the current time and date.
@@ -23,7 +23,7 @@ A customizable personal dashboard built with **React** and **Firebase**, featuri
 ### 1️⃣ Clone the repository
 ```sh
 git clone https://github.com/thexeus/Dashboard.git
-cd personal-dashboard
+cd Dashboard
 ```
 
 ### 2️⃣ Install dependencies
@@ -33,7 +33,7 @@ npm install
 
 ### 3️⃣ Set up Firebase
 1. Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
-2. Enable **Firestore Database** and **Authentication**.
+2. Enable **Firestore Database** 
 3. Create a `.env` file in the root folder and add:
 ```sh
 VITE_MET_TOKEN=your_api_token_from_MET_API
