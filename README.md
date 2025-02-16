@@ -2,15 +2,18 @@
 
 # 📊 Personal Dashboard
 
-A customizable personal dashboard built with **React** and **Firebase**, featuring widgets like a to-do list, system stats, and weather updates.
+A personal dashboard built with **React** and **Firebase**, offering customization and widgets such as a to-do list, system stats, and weather updates. Dashboard settings can be configured via a **mobile app** ([not yet developed]).
 
+![Screenshot 2025-02-17 001809](https://github.com/user-attachments/assets/b3fd153f-0d80-419e-bd49-59bb224c1d90)
 
+*The current CSS design is fixed for an 800 × 480 resolution, matching my Raspberry Pi 4B display.
 
 ## ✨ Features
 - 🕒 **Real-time Clock** – Displays the current time and date.
 - ✅ **To-Do List** – Add and manage tasks (synced with Firebase Firestore).
 - ⛅ **Weather Widget** – Shows weather forecasts.
 - 💻 **System Stats** – Displays CPU, RAM, and disk usage.
+**WILL BE IMPROVED WITH MORE CUSTOMIZATION OPTIONS AND ADDITIONAL WIDGET CHOICES!**
 
 
 ## 🛠️ Tech Stack
@@ -31,10 +34,17 @@ cd Dashboard
 npm install
 ```
 
-### 3️⃣ Set up Firebase
+### 3️⃣ Set up authentication token
+Weather API:
+1.  Create an account at [Malaysian MET] (https://api.met.gov.my/)
+2.  Get Auth Token
+
+Firebase
 1. Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
 2. Enable **Firestore Database** 
-3. Create a `.env` file in the root folder and add:
+
+
+Create a `.env` file in the root folder and add:
 ```sh
 VITE_MET_TOKEN=your_api_token_from_MET_API
 VITE_FIREBASE_API_KEY=your_api_key
@@ -54,31 +64,12 @@ Now, open **http://localhost:5173/** in your browser.
 
 ## 🔧 Usage
 
-### Adding Tasks
-- Click on the **To-Do List** section.
-- Add new tasks, which will be stored in Firestore.
-
-### Viewing System Stats
-- Displays **CPU Usage**, **RAM Usage**, and **Disk Space**.
-
-### Weather Widget
-- Shows daily weather conditions.
-
-
-
-
 
 ## 🛡️ Security
 Make sure to:
 - **Never expose API keys** publicly.
-- Use **Firebase Security Rules** to restrict database access.
 
-## 🤝 Contributing
-1. **Fork** the project.
-2. Create a **feature branch** (`git checkout -b feature-name`).
-3. **Commit changes** (`git commit -m 'Added new feature'`).
-4. **Push to GitHub** (`git push origin feature-name`).
-5. Open a **Pull Request**.
+
 
 ## 📜 License
 This project is open-source under the **MIT License**.
